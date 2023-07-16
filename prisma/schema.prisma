@@ -1,0 +1,44 @@
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model users {
+  id    String @id @default(uuid())
+  email String @unique
+  name  String
+  courts courts[] // Relation to courtss
+  games games[] // User can have many games
+}
+
+model games {
+  id      String  @id @default(uuid())
+  start   DateTime
+  end     DateTime
+  people  Int      // number of people between 1 and 10
+  user    users     @relation(fields: [userId], references: [id])
+  court   courts    @relation(fields: [courtId], references: [id])
+  userId  String
+  courtId String
+}
+
+model courts {
+  id               String    @id @default(uuid())
+  latitude         Float
+  longitude        Float
+  number_backboard Int?
+  lights           Boolean?
+  full_court       Boolean?
+  address          String
+  description      String
+  votes            Int?
+  createdAt        DateTime
+  updatedAt        DateTime
+  userId           String    // Add this line
+  user             users      @relation(fields: [userId], references: [id]) // Add this line
+  games            games[]
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
