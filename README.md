@@ -10,7 +10,7 @@ An application designed to help basketball players and enthusiasts find courts n
 
 ![BallUP](https://github.com/lighthouse-buddies/BallUP/blob/main/public/BallUP/BallUp_Homepage.png?raw=true 'Homepage screenshot')
 
-## Moblie View
+## Mobile View
 
 ![Mobile view](https://github.com/lighthouse-buddies/BallUP/blob/main/public/BallUP/Mobile_view.png?raw=true 'Mobile view screenshot')
 
