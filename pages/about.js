@@ -33,15 +33,35 @@ export default function About() {
                 <span className="italic"> best </span>and make dreams a reality.
               </p>
 
+              <span className="font-bold">Coming Soon!</span>
+              <ul className="list-disc list-inside">
+                <li className="font-bold">
+                  Scheduling
+                </li>
+                <li className="font-bold">
+                  GamePot
+                </li>
+                <li className="font-bold">
+                  Weekly Leader boards
+                </li>
+                <li className="font-bold">
+                  User Profiles
+                </li>
+              </ul>
+
+              <p className="text-gray-500 mt-6 italic text-sm">
+                Made by <a className="text-indigo-700 hover:text-indigo-900" href="https://github.com/lighthouse-buddies/BallUP" target="_blank" >Lighthouse Buddies</a>
+              </p>
+
+              <br></br>
+
+
               <Link
                 href="/-79.4005188,43.6622882,11"
                 className="inline-flex lg:w-44 items-center justify-center rounded-md border border-transparent bg-orange-500 py-2 text-sm font-medium text-white shadow-sm hover:bg-orange-600 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2"
               >
                 <p className="text-align-center">Get started</p>
               </Link>
-              <p className="text-gray-500 mt-6 italic text-sm">
-                Made by <a className="text-indigo-700 hover:text-indigo-900" href="https://github.com/lighthouse-buddies/BallUP" target="_blank" rel="noreferrer">Lighthouse Buddies</a>
-              </p>
             </div>
           </div>
         } />
