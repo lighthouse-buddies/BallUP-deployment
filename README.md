@@ -47,7 +47,7 @@ Ensure you have the respective API keys placed in the `.env` file.
 
 ## Dependencies
 
-Node version 16.20.0 or higher is required.
+Node version v16.20.1 or higher is required.
 
 npm version 8.19.4 or higher is required.
 
