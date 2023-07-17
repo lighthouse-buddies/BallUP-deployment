@@ -64,7 +64,7 @@ export default function MapComponent({ markers, session, locArray, setLoaded }) 
     await axios.post("/api/db/checkUser", {
       userId
     }).then(response => {
-      if (response.data._count.id >= 5) {
+      if (response.data._count.id >= 100) {
         setMaxModalOpen(true);
         return;
       } else {
