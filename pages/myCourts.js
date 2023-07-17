@@ -161,8 +161,7 @@ export async function getServerSideProps(context) {
     },
   });
 
-  console.log(data);
-  console.log(session);
+
 
 
   return {

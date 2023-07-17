@@ -90,7 +90,6 @@ export default function MapComponent({ markers, session, locArray, setLoaded }) 
       }).then(response => {
         setPopupInfo({ marker: response.data.marker, upvoted: response.data.upvoted });
       }).catch(error => {
-        console.log(error.response.data);
       });
     } else {
       setPopupInfo({ marker: court, upvoted: false });
@@ -120,7 +119,6 @@ export default function MapComponent({ markers, session, locArray, setLoaded }) 
         zoom: 18,
         speed: 1.8,
       });
-      console.log(selected);
     }
   }, [selected]);
 

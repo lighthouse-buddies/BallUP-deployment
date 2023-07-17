@@ -17,7 +17,6 @@ export default function DeleteModal({ open, setOpen, marker }) {
       window.location.replace('/myCourts')
     })
     .catch(error => {
-      console.log(error.response.data)
     })
   }
 
