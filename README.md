@@ -19,7 +19,7 @@ An application designed to help basketball players and enthusiasts find courts n
 - Next.js 13
 - React 18
 - Mapbox, Google Maps geocoding, and places APIs
-- PostgreSQL 9+
+- PostgreSQL 10+
 - Prisma ORM
 
 ## Installation
@@ -28,7 +28,7 @@ An application designed to help basketball players and enthusiasts find courts n
 
 2. Install dependencies by running `npm install`.
 
-    If you encounter any errors related to peer dependencies, try using `npm install --legacy-peer-deps` instead. 
+   If you encounter any errors related to peer dependencies, try using `npm install --legacy-peer-deps` instead.
 
 3. Create a `.env.local` file and add the following environment variables following the `.env.example` file
 
