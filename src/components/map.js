@@ -60,11 +60,11 @@ export default function MapComponent({ markers, session, locArray, setLoaded }) 
     }
 
     // Check if user has hit upload limit, currently 5
-    const userId = session.user.email;
+    const email = session.user.email;
     await axios.post("/api/db/checkUser", {
-      userId
+      email: email
     }).then(response => {
-      if (response.data._count.id >= 100) {
+      if (response.data._count.id >= 5) {
         setMaxModalOpen(true);
         return;
       } else {
