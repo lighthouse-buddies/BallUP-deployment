@@ -6,6 +6,7 @@ export default async function checkCourt(req, res) {
     try {
         const marker = await prisma.courts.findUnique({
             where: {
+                userId: userId,
                 id: markerId
             }
         })
