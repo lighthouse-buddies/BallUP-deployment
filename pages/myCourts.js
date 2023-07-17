@@ -149,11 +149,21 @@ export async function getServerSideProps(context) {
     };
   }
 
+
+  const userId = (await prisma.users.findUnique({
+    where: {
+        email: session.user.email,
+    }
+  })).id
   const data = await prisma.courts.findMany({
     where: {
-      userId: session.user.id,
+      userId: userId,
     },
   });
+
+  console.log(data);
+  console.log(session);
+
 
   return {
     props: {
