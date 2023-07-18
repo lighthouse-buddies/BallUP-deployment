@@ -58,7 +58,7 @@ export default function CourtsPanel({ open, setOpen, marker, session, edit }) {
         });
   
         // jump to new marker location
-        window.location.replace(`/${marker.lng},${marker.lat},18`);
+        window.location.replace(`${marker.lng},${marker.lat},18`);
       } else {
         // Update in db if not new entry
         const response = await axios.put("/api/db/updateCourt", {
@@ -71,7 +71,7 @@ export default function CourtsPanel({ open, setOpen, marker, session, edit }) {
       }
     } catch (error) {
 
-      alert('try again');
+      alert(error);
     }
   };
   

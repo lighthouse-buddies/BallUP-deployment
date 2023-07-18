@@ -9,16 +9,25 @@ export default async function checkUser(req, res) {
       return
     }
 
-    const { id } = req.body;
+    const { email } = req.body;
+    const id = (await prisma.users.findUnique({
+        where: {
+            email: email,
+        }
+    })).id;
     
     try {
         // Update uservote; user must exist if they've already upvoted
+
+
+
+
         const count = await prisma.courts.aggregate({
           _count: {
             id: true
           },
           where: {
-            id: {
+            userId: {
                 contains: id
             }
           }
