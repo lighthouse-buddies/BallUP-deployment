@@ -155,6 +155,17 @@ export default function MapComponent({ markers, session, locArray, setLoaded }) 
               zoom: 19,
               speed: 1.8,
             });
+
+            setPopupInfo({
+              marker: {
+                longitude: marker.longitude,
+                latitude: marker.latitude,
+                address: marker.address,
+                description: marker.description,
+                // votes: marker.votes,
+              },
+            });
+
           }}
         >
           <img className="h-7 w-7" src="/ball_up.svg" />
@@ -271,7 +282,7 @@ export default function MapComponent({ markers, session, locArray, setLoaded }) 
 
                 <div className="flex gap-2 mt-3">
 
-                  <p className="text-sm text-gray-700 my-auto">{popupInfo.marker.votes}</p>
+                  {/*<p className="text-sm text-gray-700 my-auto">{popupInfo.marker.votes}</p>*/}
                 </div>
               </div>
             </Popup>
