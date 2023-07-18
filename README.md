@@ -100,3 +100,4 @@ Our application relies on the following dependencies:
 
 - [Arian Ahmadi](https://github.com/arianah75)
 - [Abdul Syed](https://github.com/syabdulr)
+- [Steve Liu](https://github.com/monki1)
