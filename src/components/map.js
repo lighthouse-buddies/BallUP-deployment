@@ -32,7 +32,7 @@ export default function MapComponent({ markers, session, locArray, setLoaded }) 
 
   const locations = [
     { name: 'Toronto', long: -79.4005188, lat: 43.6622882 },
-    { name: 'NYC', long: -73.960412, lat: 40.750808 },
+   // { name: 'NYC', long: -73.960412, lat: 40.750808 },
     { name: 'Montreal', long: -73.567253, lat: 45.501690 },
     { name: 'Ottawa', long: -75.697193, lat: 45.421530 },
     { name: 'Vancouver', long: -123.1207, lat: 49.2827 },
